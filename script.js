@@ -294,7 +294,7 @@ function moveStar() {
     function () {
       moveStar();
     },
-    150 + Math.random() * 220,
+    150 + Math.random() * 300,
   );
 }
 
