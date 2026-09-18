@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="stars-background"></div>
+
+
+    <!-- ================================= -->
+    <!-- 1. OPENING -->
+    <!-- ================================= -->
+
+    <section class="screen active" id="opening">
+
+        <div class="opening-content">
+
+            <div class="small-text">
+                <h2>Fata Fat Box Open Kar</h2>
+            </div>
+            <!-- THIS IS THE ONLY BOX -->
+            <!-- SHE CLICKS THIS -->
+            <div class="main-gift-box" id="originalBox">
+
+                <div class="gift-emoji">
+                    🎁
+                </div>
+
+                <div class="box-glow"></div>
+
+            </div>
+
+            <h2 id="openingText">
+                Click the box. 👀
+            </h2>
+
+        </div>
+
+
+        <!-- Fake OPEN buttons appear
+             around the screen -->
+
+        <div id="fakeButtons"></div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- 2. BIRTHDAY -->
+    <!-- ================================= -->
+
+    <section class="screen" id="birthday">
+
+        <div class="birthday-content">
+
+            <div class="birthday-small">
+                <h1>Finally Tane Box Dekhy Gyu </h1>
+            </div>
+
+            <p class="finally-text">
+            <h2>Ae Vaat Per</h2>
+            </p>
+
+
+            <div class="birthday-line"></div>
+
+
+            <div class="birthday-cake">
+                🎂
+            </div>
+
+
+            <h1 class="happy">
+                HAPPY BIRTHDAY
+            </h1>
+
+
+            <!-- CHANGE HER NAME -->
+
+            <h4 class="her-name">
+                Haydree 😎
+            </h4>
+
+            <h3 class="birthday-description">
+                Saru... Hve.
+                <br>
+                Joiye tara Thi Kai Thy K ni.😂
+            </h3>
+
+
+            <button class="main-btn" id="startChallenges">
+                LET'S PLAY CHALLENGES →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- 3. CHALLENGE INTRO -->
+    <!-- ================================= -->
+
+    <section class="screen" id="challengeIntro">
+
+        <div class="challenge-content">
+
+            <div class="challenge-number">
+                CHALLENGE 01
+            </div>
+
+
+            <div class="challenge-icon">
+                🦇
+            </div>
+
+            <h2>
+                The Chamacidiyu CHALLENGE
+            </h2>
+
+            <div class="rules">
+                <p>🦇 Badha Chamacidiya Pakdi ne Batav chal </p>
+                <p>⏱️ You only have 15 seconds.</p>
+            </div>
+
+            <button class="main-btn" id="startGame">
+                START CHALLENGE
+            </button>
+        </div>
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- 4. STAR GAME -->
+    <!-- ================================= -->
+
+    <section class="screen" id="game">
+
+        <div class="game-header">
+
+            <div class="challenge-number">
+                CHALLENGE 01
+            </div>
+
+
+            <h1>
+                🦇 CATCH THE Chamacidiyu
+            </h1>
+
+
+            <div class="game-stats">
+
+                <div>
+                    🦇
+                    <span id="score">0</span>
+                </div>
+
+                <div>
+                    ⏱️
+                    <span id="timer">15</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div id="gameArea">
+
+            <div id="gameMessage">
+                Jaldi Pakad...
+            </div>
+
+            <div id="star">
+                🦇
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- 5. STAR RESULT -->
+    <!-- ================================= -->
+
+    <section class="screen" id="starResult">
+
+        <div class="result-content">
+
+            <div class="challenge-number">
+                CHALLENGE COMPLETE
+            </div>
+
+            <div class="challenge-icon">
+                🦇
+            </div>
+
+            <h2>
+                YOUR SCORE
+            </h2>
+
+
+            <div class="big-score">
+
+                <span id="finalScore">
+                    0
+                </span>
+
+                <small>/15</small>
+
+            </div>
+
+
+            <p id="scoreMessage">
+                Hmm...
+            </p>
+
+            <button class="main-btn" id="nextChallenge">
+                NEXT CHALLENGE →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- 6. MATH CHALLENGE -->
+    <!-- ================================= -->
+
+    <section class="screen" id="mathChallenge">
+
+        <div class="math-content">
+
+            <div class="challenge-number">
+                CHALLENGE 02
+            </div>
+
+
+            <div class="challenge-icon">
+                🧠
+            </div>
+
+
+            <h2>
+                Surly Atlu To Avadtuj Hse...
+            </h2>
+
+
+            <p class="question-intro">
+                Okay, Aa Last Challlenge Che.
+            </p>
+
+
+            <div class="question-box">
+                <p>
+                    A particle moves according to:
+                </p>
+                <div class="equation">
+                    x(t) = A sin(ωt + φ)
+                </div>
+
+                <div class="question">
+                    WHAT IS THE VALUE OF X?
+                </div>
+
+            </div>
+
+
+            <div class="math-buttons">
+
+                <div class="answer-section">
+
+                    <p class="answer-label">
+                        Avde Pn Che ANSWER? 👀
+                    </p>
+
+                    <input type="text" id="mathAnswer" class="math-input" placeholder="Type your answer here..."
+                        autocomplete="off">
+
+                    <button class="main-btn" id="submitAnswer">
+                        SUBMIT ANSWER →
+                    </button>
+
+                </div>
+
+                <div class="math-buttons">
+
+                    <button class="secondary-btn" id="showAnswer">
+                        SHOW ANSWER
+                    </button>
+
+                    <button class="skip-btn" id="skipQuestion">
+                        😭 SKIP
+                    </button>
+
+                </div>
+
+                <div class="math-result" id="mathResult"></div>
+
+                <div class="math-result" id="mathResult"></div>
+
+            </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- 7. SKIP + REWARD SAME PAGE -->
+    <!-- ================================= -->
+
+    <section class="screen" id="reward">
+
+        <div class="reward-content">
+
+            <div class="challenge-number">
+                CHALLENGE 02 COMPLETE
+            </div>
+
+
+            <div class="reward-message">
+                <h1>
+                    Wahaa 🫡<br>
+                    Mane Khbrj Hti Avuj Skip Kridese
+                </h1>
+                <br><br>
+                <p>
+                    But it's okay.
+                </p>
+                <p>
+                    Nito Pag Dukhse.😂
+                </p>
+            </div>
+
+            <div class="reward-divider"></div>
+
+            <!-- REWARD DIRECTLY ON THIS PAGE -->
+
+            <div class="reward-heading">
+                <h2>
+                    Atli Mgj Mari Kairi Te
+                </h2>
+                <p>
+                    Ne Ketlu karab Raimi 😂...
+                    <br>
+                    So Ek Reward To Deserve Kare Che
+                </p>
+            </div>
+            <div class="gift-card">
+
+                <div class="gift-card-top">
+                    REWARD 🎁
+                </div>
+                <!-- CHANGE THIS -->
+                <h3>
+                    AMAZON GIFT CARD
+                </h3>
+                <p>
+                    REDEEM CODE
+                </p>
+
+                <!-- PUT YOUR REAL CODE HERE -->
+
+                <div class="redeem-code">
+                    Chocolate Lav To Kev Code 😏.
+                </div>
+
+
+                <p class="gift-note">
+                    Buy What Ever You Like . 👻
+                </p>
+
+            </div>
+
+
+            <button class="main-btn" id="finalButton">
+                ONE LAST THING... ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- 8. FINAL -->
+    <!-- ================================= -->
+
+    <section class="screen final-screen" id="finalMessage">
+
+        <div id="confetti-container"></div>
+
+
+        <div class="fireworks">
+
+            <span class="firework f1"></span>
+            <span class="firework f2"></span>
+            <span class="firework f3"></span>
+            <span class="firework f4"></span>
+
+        </div>
+
+
+        <div class="final-content">
+
+            <div class="final-cake">
+                🎂
+            </div>
+
+            <h1>
+                HAPPY BIRTHDAY
+            </h1>
+
+            <!-- CHANGE HER NAME -->
+
+            <div class="final-message-text">
+
+                <p>
+                    I hope you have an amazing birthday
+                    and an even better year.
+                </p>
+
+
+                <p>
+                    Keep smiling, keep being yourself,
+                    and keep being the wonderful idiot
+                    that you are. 😂❤️
+                </p>
+
+
+                <p>
+                    Happy Birthday! 🎂
+                </p>
+
+            </div>
+
+
+            <div class="signature">
+                — Your Great and Intelligent Friend
+                <br>Darshil 😎
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
