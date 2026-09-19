@@ -301,7 +301,7 @@ function moveStar() {
 
   starTimeout = setTimeout(() => {
     moveStar();
-  }, 50 + Math.random() * 150);
+  }, 150 + Math.random() * 100);
 }
 /*
     Catch star.
