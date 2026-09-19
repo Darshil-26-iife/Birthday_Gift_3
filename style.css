@@ -805,7 +805,7 @@ body::before {
 }
 
 .redeem-code {
-  padding: 5px;
+  padding: 6px;
 
   margin-top: 10px;
 
@@ -815,9 +815,7 @@ body::before {
 
   font-family: monospace;
 
-  font-size: 18px;
-
-  letter-spacing: 1px;
+  font-size: 17px;
 
   word-break: break-all;
 }
