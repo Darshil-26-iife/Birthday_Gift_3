@@ -266,38 +266,43 @@ function moveStar() {
   }
 
   const areaWidth = gameArea.clientWidth;
-
   const areaHeight = gameArea.clientHeight;
+  const starSize = 45;
 
-  const maxX = areaWidth - 45;
+  const maxX = areaWidth - starSize;
+  const maxY = areaHeight - starSize;
 
-  const maxY = areaHeight - 45;
+  // Current position
+  const currentX = parseFloat(star.style.left) || 0;
+  const currentY = parseFloat(star.style.top) || 0;
 
-  const randomX = Math.random() * maxX;
+  let randomX;
+  let randomY;
+  let distance;
 
-  const randomY = Math.random() * maxY;
+  // Keep generating a new position until it is far enough
+  do {
+    randomX = Math.random() * maxX;
+    randomY = Math.random() * maxY;
 
+    const dx = randomX - currentX;
+    const dy = randomY - currentY;
+
+    distance = Math.sqrt(dx * dx + dy * dy);
+
+  } while (distance < 250);
+
+  // Move star
   star.style.left = randomX + "px";
-
   star.style.top = randomY + "px";
 
-  /*
-        Automatically move
-        after a short time.
-
-        This makes it harder.
-    */
-
+  // Move again very quickly
   clearTimeout(starTimeout);
 
-  starTimeout = setTimeout(
-    function () {
-      moveStar();
-    },
-    100 + Math.random() * 150,
-  );
+  starTimeout = setTimeout(() => {
+    moveStar();
+  }, 30 + Math.random() * 50);
 }
-
 /*
     Catch star.
 */
